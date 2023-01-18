@@ -1,3 +1,5 @@
+@use '../../styles/variables'
+    
 form
     padding: 20px 0
     width: 60%
@@ -16,11 +18,11 @@ form
 
     input
         outline: 0
-        color: #656565
+        color:$ variables.$text-color-1
     
 
     h2
-        color: #656565
+        color: variables.$text-color-1
         font-size: 30px
         margin-right: 40px
 
@@ -33,12 +35,12 @@ form
 
         .span-title
             font-size: 14px
-            color: #656565
+            color: variables.$text-color-1
             margin-bottom: 10px
 
         div
 
-            border: 1px solid #dde6e9
+            border: 1px solid variables.$border-color
             height: 35px
             width: 70%
 
@@ -47,7 +49,7 @@ form
             text-align: center
 
             span
-                color: #cecece
+                color: variables.$description-color
                 width: 10%
 
             input
@@ -56,14 +58,14 @@ form
                 border: none   
 
         input
-            border: 1px solid #dde6e9
+            border: 1px solid variables.$border-color
             width: 70%
             height: 35px
             padding-left: 8px
 
         h3
             font-size: 9px
-            color: #cecece
+            color: variables.$description-color
 
     .detail-type
         height: 70px
