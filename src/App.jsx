@@ -2,6 +2,7 @@
 import axios from 'axios';
 import { useState } from 'react';
 import { useMutation } from 'react-query';
+import { toast } from 'react-toastify';
 import AdvanceForm from './components/AdvanceForm/AdvanceForm';
 import Result from './components/Result/Result';
 
@@ -19,7 +20,10 @@ function App() {
   const onSubmitData = (data) => {
     axios.post('https://frontend-challenge-7bu3nxh76a-uc.a.run.app', data)
     .then(response => setNewValues(response.data))
-    .catch(err => console.log(err))
+    .catch((err) => {
+      console.log(err)
+      toast.error('Dados preenchidos incorretamente!')
+    })
   }
 
   return (
