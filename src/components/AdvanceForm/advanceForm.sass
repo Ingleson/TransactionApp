@@ -9,7 +9,7 @@ form
     justify-content: center
     align-items: center
 
-    gap: 40px
+    gap: 30px
     
     input[type=number]::-webkit-inner-spin-button,
     input[type=number]::-webkit-outer-spin-button
@@ -18,13 +18,12 @@ form
 
     input
         outline: 0
-        color:$ variables.$text-color-1
+        color: variables.$text-color-first
     
 
     h2
-        color: variables.$text-color-1
+        color: variables.$text-color-first
         font-size: 30px
-        margin-right: 40px
 
     .input-type
         width: 80%
@@ -35,7 +34,7 @@ form
 
         .span-title
             font-size: 14px
-            color: variables.$text-color-1
+            color: variables.$text-color-first
             margin-bottom: 10px
 
         div
@@ -69,6 +68,18 @@ form
 
     .detail-type
         height: 70px
+
+    button
+        width: 100px
+        height: 30px
+        border: variables.$border-color
+        border-radius: 4px
+        color: #fff
+        background-color: variables.$text-color-secondary
+        cursor: pointer
+    
+    button:hover
+        opacity: 50%
             
 
         
